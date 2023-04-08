@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>login</title>
+<style>
+.search{
+display:grid;
+gap:10px;
+border:2px solid black;
+width:fit-content;
+padding:30px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:url('https://wallpaperaccess.com/full/1892752.jpg');
+color:white;
+box-shadow:5px 5px black;
+}
+*{
+margin:0;
+padding:0;
+}
+.img{
+background:url('https://wallpaperaccess.com/full/1892752.jpg');
+background-repeat:no-repeat;
+height:100vh;
+background-size:cover;
+background-position:69%;
+background-blend-mode:lighten;
+}
+button{
+background:red;
+}
+.nav{
+display:flex;
+justify-content:space-around;
+margin:0;
+padding:0;
+}
+a{
+color:black;
+font-size:20px;
+font-weight:bold;
+}
+a:hover{
+color:red;
+}
+</style>
+<script>
+function details()
+{
+    let n=document.getElementById("number").value;
+	if(n=="ap26bk7092")
+	{
+	 alert("records found");
+	 window.location.assign("tameem.html");
+	}
+	else
+	{
+	alert("not found");
+	}
+}
+</script>
+</head>
+<body>
+<div class="img">
+<nav class="nav">
+<a href="#">HOME</a>
+<a href="#">support</a>
+<a href="#">register</a>
+<a href="#">login</a>
+</nav>
+</div>
+<div class="search">
+<label><strong>ENTER-VEHICLE-NUMBER</strong></label>
+<input type="text" id="number" required>
+<button onclick="details()">search</button>
+<marquee direction="right" scrollamount=10>@CREATED BY TAMEEM</marquee>
+</div>
+</body>
+</html>
